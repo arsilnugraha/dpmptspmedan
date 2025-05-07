@@ -1,0 +1,243 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+/* Animated cards */
+.hover-card {
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	border: none;
+	overflow: hidden;
+}
+
+.hover-card:hover {
+	transform: translateY(-7px);
+	box-shadow: 0 12px 24px rgba(0, 100, 0, 0.1) !important;
+}
+
+.hover-card:hover .counter-number {
+	color: #0b5a27 !important;
+}
+
+/* Card link styling */
+a.card-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Filter badge styling */
+.filter-badge {
+	background-color: #f0f8f0;
+	color: #0b5a27;
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-size: 0.85rem;
+	font-weight: 500;
+}
+
+/* Filter button group styling */
+.filter-btn-group .btn {
+	padding: 10px 15px;
+	border-radius: 0;
+	transition: all 0.2s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.filter-btn-group .btn:first-child {
+	border-radius: 50px 0 0 50px;
+}
+
+.filter-btn-group .btn:last-child {
+	border-radius: 0 50px 50px 0;
+}
+
+.filter-btn-group .btn:hover {
+	transform: translateY(-2px);
+}
+
+.filter-btn-group .btn.btn-success {
+	background: linear-gradient(90deg, #0b5a27, #1e9853);
+	border-color: #0b5a27;
+}
+
+/* Counter animation */
+.counter-number {
+	transition: all 0.3s ease;
+	display: inline-block;
+}
+
+/* Pagination styling */
+.pagination-wrapper .pagination > li > a,
+.pagination-wrapper .pagination > li > span {
+	border: none;
+	color: #0b5a27;
+	margin: 0 3px;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+}
+
+.pagination-wrapper .pagination > li.active > a,
+.pagination-wrapper .pagination > li.active > span {
+	background: linear-gradient(90deg, #0b5a27, #1e9853);
+	color: white;
+}
+
+.pagination-wrapper .pagination > li > a:hover {
+	background-color: #f0f8f0;
+	transform: translateY(-2px);
+}
+
+/* Pulse animation for today's events */
+.pulse-animation {
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+	}
+}
+
+/* Table styling */
+.marriage-table {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.marriage-table .table {
+	margin-bottom: 0;
+}
+
+.marriage-table thead th {
+	border-top: none;
+	border-bottom: 2px solid #e9ecef;
+	font-weight: 600;
+	color: #495057;
+	padding: 15px;
+	background-color: #f8f9fa;
+}
+
+.marriage-table tbody tr {
+	border-bottom: 1px solid #e9ecef;
+	transition: all 0.2s ease;
+}
+
+.marriage-table tbody tr:hover {
+	background-color: #f8f9fa;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	z-index: 1;
+	position: relative;
+}
+/* Add these styles to complement the header changes */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap");
+
+/* Wedding header styling */
+.wedding-title {
+	font-family: "Playfair Display", serif;
+	letter-spacing: 3px;
+	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+	font-size: 2.8rem;
+	position: relative;
+	display: inline-block;
+}
+
+.wedding-subtitle {
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 1px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* Logo enhancement */
+.wedding-logo {
+	transition: transform 0.3s ease;
+	transform-origin: center;
+}
+
+.wedding-logo:hover {
+	transform: scale(1.05);
+}
+
+/* Divider styling */
+.divider-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.divider-line {
+	flex-grow: 1;
+	height: 1px;
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.divider-icons {
+	padding: 0 15px;
+}
+
+.wedding-icon {
+	font-size: 1.2rem;
+	filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+	transition: transform 0.3s ease;
+}
+
+.wedding-icon:hover {
+	transform: scale(1.2);
+}
+
+/* Animation enhancements */
+.animate__fadeInDown {
+	animation-duration: 1.2s;
+}
+
+.animate__fadeInUp {
+	animation-duration: 1.2s;
+}
+
+/* Enhanced card shadow */
+.card.shadow {
+	box-shadow: 0 10px 30px rgba(0, 70, 0, 0.1) !important;
+	border-radius: 12px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.wedding-title {
+		font-size: 2.2rem;
+	}
+
+	.divider-container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 576px) {
+	.d-flex.justify-content-center.align-items-center {
+		flex-direction: column;
+	}
+
+	.border-start {
+		border-left: none !important;
+		border-top: 2px solid rgba(255, 255, 255, 0.6);
+		padding-top: 15px;
+		margin-top: 15px;
+		padding-left: 0 !important;
+		text-align: center !important;
+	}
+
+	.wedding-logo {
+		margin-right: 0 !important;
+		margin-bottom: 15px;
+	}
+}

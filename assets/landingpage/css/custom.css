@@ -1,0 +1,228 @@
+#footer {
+	background-color: #1a1a1a;
+	padding-top: 60px;
+	position: relative;
+}
+
+#footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(
+		to right,
+		transparent,
+		rgba(255, 255, 255, 0.1),
+		transparent
+	);
+}
+
+.footer-logo {
+	max-height: 60px;
+	margin-bottom: 20px;
+}
+
+.contact-info {
+	background: rgba(255, 255, 255, 0.05);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	color: #ffffff80;
+	transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+	color: #fff;
+}
+
+.contact-item i {
+	width: 24px;
+	color: #007bff;
+}
+
+.widget_links ul.link-list {
+	padding: 0;
+	list-style: none;
+}
+
+.widget_links ul.link-list li {
+	margin-bottom: 12px;
+}
+
+.widget_links ul.link-list a {
+	color: #ffffff80;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+}
+
+.widget_links ul.link-list a:hover {
+	color: #fff;
+	transform: translateX(5px);
+}
+
+/* Visitor Stats Styles */
+.visitor-stats-card {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 12px;
+	padding: 25px;
+}
+
+.stats-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.stat-box {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+	transform: translateX(5px);
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.stat-icon {
+	width: 45px;
+	height: 45px;
+	background: #dc3545;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+
+.stat-icon.blue {
+	background: #007bff;
+}
+
+.stat-icon i {
+	color: #fff;
+	font-size: 20px;
+}
+
+.stat-content {
+	flex-grow: 1;
+}
+
+.stat-title {
+	display: block;
+	color: #ffffff80;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.stat-number {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+/* Social Media Styles */
+.social-media-links {
+	margin-top: 30px;
+}
+
+.social-icons {
+	display: flex;
+	gap: 15px;
+}
+
+.social-logo {
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.social-logo {
+	transition: all 0.3s ease;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 50%; /* Membuat lingkaran */
+	text-align: center;
+}
+
+/* Hover untuk ikon pertama (Facebook) */
+.social-logo-fb:hover {
+	background: linear-gradient(
+		135deg,
+		#1877f2,
+		#003c8f
+	); /* Gradien khas Facebook */
+	transform: translateY(-3px);
+}
+
+/* Hover untuk ikon kedua (Instagram) */
+.social-logo-ig:hover {
+	background: linear-gradient(
+		135deg,
+		#f58529,
+		#dd2a7b,
+		#8134af,
+		#515bd4
+	); /* Gradien Instagram */
+	transform: translateY(-3px);
+}
+
+/* Hover untuk ikon ketiga (YouTube) */
+.social-logo-yt:hover {
+	background: linear-gradient(
+		135deg,
+		#ff0000,
+		#990000
+	); /* Gradien khas YouTube */
+	transform: translateY(-3px);
+}
+
+.social-logo:hover i {
+	color: #ffffff; /* Membuat ikon menjadi putih saat hover */
+}
+
+/* Copyright Section */
+#copyrights {
+	padding: 30px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#copyrights p {
+	color: #ffffff80;
+	font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+	.col-lg-4 {
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.stats-container {
+		flex-direction: column;
+	}
+
+	.stat-box {
+		width: 100%;
+	}
+}

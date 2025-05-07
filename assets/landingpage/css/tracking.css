@@ -1,0 +1,193 @@
+/* Custom Theme Colors */
+.theme-primary {
+	color: #2e7d32 !important;
+}
+.theme-bg-primary {
+	background-color: #2e7d32 !important;
+}
+.theme-border-primary {
+	border-color: #2e7d32 !important;
+}
+.theme-bg-light {
+	background-color: #f1f8e9 !important;
+}
+.theme-hover:hover {
+	background-color: #1b5e20 !important;
+}
+
+/* Animations */
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scaleIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes slideRight {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Animated Elements */
+.fade-up {
+	animation: fadeUp 0.6s ease-out;
+}
+
+.scale-in {
+	animation: scaleIn 0.5s ease-out;
+}
+
+.slide-right {
+	animation: slideRight 0.5s ease-out;
+}
+
+/* Loading Animation */
+.loading-spinner {
+	width: 50px;
+	height: 50px;
+	border: 5px solid #f3f3f3;
+	border-top: 5px solid #2e7d32;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Timeline Styles */
+.timeline {
+	position: relative;
+	padding-left: 3rem;
+}
+
+.timeline-item {
+	position: relative;
+	padding-bottom: 2rem;
+	opacity: 0;
+	transform: translateX(-20px);
+	transition: all 0.3s ease-out;
+}
+
+.timeline-item.animate {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.timeline-item::before {
+	content: "";
+	position: absolute;
+	left: -1.5rem;
+	top: 0;
+	height: 100%;
+	width: 2px;
+	background: #e0e0e0;
+}
+
+.timeline-dot {
+	position: absolute;
+	left: -1.75rem;
+	top: 0;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #2e7d32;
+	transform: scale(0);
+	transition: transform 0.3s ease-out;
+}
+
+.timeline-item.animate .timeline-dot {
+	transform: scale(1);
+}
+
+/* Card Styles */
+.hover-card {
+	transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.fancy-input {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.fancy-input input,
+.fancy-input select {
+	width: 100%;
+	padding: 1rem;
+	border: 2px solid #e0e0e0;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	background: white;
+}
+
+.fancy-input input:focus,
+.fancy-input select:focus {
+	border-color: #2e7d32;
+	box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.fancy-input label {
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	background: white;
+	padding: 0 0.5rem;
+	color: #666;
+	transition: all 0.3s ease;
+	pointer-events: none;
+}
+
+.fancy-input input:focus ~ label,
+.fancy-input input:not(:placeholder-shown) ~ label,
+.fancy-input select:focus ~ label,
+.fancy-input select:not([value=""]):valid ~ label {
+	top: 0;
+	font-size: 0.8rem;
+	color: #2e7d32;
+}
+
+/* Status Badge */
+.status-badge {
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.status-badge:hover {
+	transform: translateY(-2px);
+}
