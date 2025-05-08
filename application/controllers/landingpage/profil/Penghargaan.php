@@ -29,7 +29,7 @@ class Penghargaan extends CI_Controller {
 		$output['content'] = 'landingpage/profil/penghargaan/penghargaan_view';
 		$output['after_page'] = 'landingpage/profil/penghargaan/penghargaan_after_page';
       $output['penghargaan'] = $this->dbObject->get_general('profil_penghargaan');
-		$output['rekankami'] = $this->dbObject->get_general('rekan_kami');
+		$output['plugin'] = 'bootstrap5';
       $this->load->view('landingpage/master_page', $output);
 	}
 

@@ -80,7 +80,7 @@
                                             <td><?= $dokumen['Status'] ?></td>
                                             <td>
                                                 <?php if (!empty($dokumen['Format'])): ?>
-                                                <a href="<?= $dokumen['Format'] ?>" class="btn btn-download" download>
+                                                <a href="https://sipandumedan.medan.go.id/<?= $dokumen['Format'] ?>" class="btn btn-download" download>
                                                     <i class="fas fa-download"></i>
                                                 </a>
                                                 <?php else: ?>

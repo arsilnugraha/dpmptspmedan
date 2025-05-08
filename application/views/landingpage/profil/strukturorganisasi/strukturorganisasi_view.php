@@ -16,11 +16,6 @@
                                 <img src="<?php echo base_url('assets/foto_strukturorganisasi/'. $strukturorganisasi->gambar_struktur) ?>" alt="DPMPTSP Medan">
                             </a>
                         </div>
-                        <div class="entry-content mt-0">
-                            <a href="<?php echo base_url('assets/file_daftarasn/'. $strukturorganisasi->nama_asn_pdf) ?>">
-                                <h4><u>Daftar Nama ASN DPMPTSP Kota Medan</u></h4>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

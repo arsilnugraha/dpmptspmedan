@@ -17,11 +17,6 @@
                </a>
             </li>
             <li class="menu-item">
-               <a class="menu-link" href="<?php echo base_url('landingpage/profil/saranalayanan')?>">
-                     <div>Foto Sarana Layanan</div>
-               </a>
-            </li>
-            <li class="menu-item">
                <a class="menu-link" href="<?php echo base_url('landingpage/profil/strukturorganisasi')?>">
                      <div>Struktur Organisasi</div>
                </a>
@@ -45,9 +40,21 @@
    </li>
 
    <li class="menu-item">
-         <a class="menu-link" href="https://investmedan.pemkomedan.go.id/">
+         <a class="menu-link" href="#">
             <div>Investasi</div>
          </a>
+         <ul class="sub-menu-container">
+            <li class="menu-item">
+                  <a class="menu-link" href="<?php echo base_url()?>">
+                        <div>Realisasi Investasi</div>
+                  </a>
+            </li>
+            <li class="menu-item">
+                  <a class="menu-link" href="https://simedanpantas.medan.go.id/">
+                        <div>Peluang Investasi</div>
+                  </a>
+            </li>
+         </ul>
    </li>
 
    <li class="menu-item">
@@ -94,6 +101,12 @@
    </li>
 
    <li class="menu-item">
+         <a class="menu-link" href="<?php echo base_url('landingpage/peraturanperizinan')?>">
+            <div>Peraturan</div>
+         </a>
+   </li>
+
+   <!-- <li class="menu-item">
          <a class="menu-link" href="#">
             <div>Pelayanan</div>
          </a>
@@ -119,7 +132,7 @@
                </a>
             </li>
          </ul>
-   </li>
+   </li> -->
 
    <li class="menu-item">
          <a class="menu-link" href="<?php echo base_url('landingpage/imb')?>">

@@ -1,20 +1,68 @@
 <!-- Hero Section -->
-<div class="swiper hero-slider">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide hero-slide" style="background-image: url('https://dpmptsp.medan.go.id/public/media/_theme/images/slider/swiper/horas-medan-icon.jpg')">
-            <div class="hero-overlay">
-                <div class="container">
-                    <div class="hero-content" data-aos="fade-right">
-                        <h1 class="text-white">Welcome to Medan</h1>
-                        <p class="lead text-white mb-4">Selamat datang di Portal Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kota Medan</p>
-                        <a href="#portal" class="btn btn-lg btn-success-gr">Lihat Portal</a>
+<div class="revolution-slider">
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide active" data-index="1">
+            <div class="slide-background" style="background-image: url('https://dpmptsp.medan.go.id/public/media/_theme/images/slider/swiper/horas-medan-icon.jpg')"></div>
+            <div class="slide-overlay">
+                <div class="slide-content">
+                    <div class="slide-heading">
+                        <h2>Selamat Datang di <span>DPMPTSP</span> Kota Medan</h2>
+                    </div>
+                    <div class="slide-divider"></div>
+                    <div class="slide-text">
+                        <p>Mewujudkan pelayanan perizinan yang cepat, efisien, dan transparan untuk kemajuan investasi di Kota Medan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide" data-index="2">
+            <div class="slide-background" style="background-image: url('https://dpmptsp.medan.go.id/public/media/_theme/images/slider/swiper/horas-medan-icon.jpg')"></div>
+            <div class="slide-overlay">
+                <div class="slide-content">
+                    <div class="slide-heading">
+                        <h2>Perizinan <span>Satu Atap</span></h2>
+                    </div>
+                    <div class="slide-divider"></div>
+                    <div class="slide-text">
+                        <p>Kami memudahkan proses perizinan usaha dan investasi melalui aplikasi SIPANDU
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="swiper-pagination"></div> -->
+    
+    <!-- Progress Bar -->
+    <div class="slider-progress"></div>
+    
+    <!-- Slide Navigation -->
+    <div class="slider-nav">
+        <div class="nav-dots">
+            <div class="nav-dot active" data-index="1"></div>
+            <div class="nav-dot" data-index="2"></div>
+        </div>
+    </div>
+    
+    <!-- Slide Controls -->
+    <div class="slider-controls">
+        <div class="control-button prev-button">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="control-button next-button">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    
+    <!-- Slide Indicator -->
+    <div class="slide-indicator">
+        <span class="current-slide">01</span>
+        <div class="separator"></div>
+        <span class="total-slides">02</span>
+    </div>
 </div>
+
 
 <!-- Portal Section -->
 <section class="portal-section" id="portal">
