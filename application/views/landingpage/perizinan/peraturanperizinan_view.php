@@ -8,12 +8,6 @@
                             <h2 class="mb-3">Peraturan Izin</h2>
                             <p class="text-muted mb-0">Filter Pencarian Izin berdasarkan keyword atau Kategori.</p>
                         </div>
-                        <form class="input-group input-group-lg mb-4">
-                            <input id="table-input-filter" type="text" class="form-control w-auto" aria-label="Text input with dropdown button" placeholder="Search..">
-                            <button class="btn bg-color text-white border-0">
-                                Cari
-                            </button>
-                        </form>
                     </div>
                 </div>
             </div>

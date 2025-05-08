@@ -35,6 +35,7 @@ class Visitormpp extends CI_Controller {
         
         $data['menu_aktif'] = 'visitormpp';
         $data['content'] = 'landingpage/mpp/visitor_statistics_mpp_view';
+        $data['plugin'] = 'bootstrap5';
         $this->load->view('landingpage/master_page', $data);
     }
 

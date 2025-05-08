@@ -1,12 +1,18 @@
-<div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="card shadow-lg animate__animated animate__fadeIn">
-                    <div class="card-body p-4 text-center">
-                        <h2 class="text-success mb-3">Persyaratan Izin</h2>
-                        <p class="text-muted">Daftar persyaratan untuk mengajukan perizinan di Kota Medan</p>
+<section id="content">
+    <div class="content-wrap pt-0">
+        <div class="section mt-0 overflow-visible">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-7">
+                        <div class="heading-block border-bottom-0 mb-4">
+                            <h2 class="mb-3">Persyaratan Izin</h2>
+                            <p class="text-muted mb-0">Daftar persyaratan untuk mengajukan perizinan di Kota Medan</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container clearfix" style="margin-top: 50px;">
 
                 <?php if (isset($error_message)): ?>
                 <div class="alert alert-danger animate__animated animate__fadeIn mt-4" role="alert">
@@ -54,9 +60,9 @@
                                                         $dokumen['Kategori'] !== $previous_kategori;
                                         ?>
                                         <?php if ($show_subheader): ?>
-                                        <tr class="row-permohonan">
-                                            <td colspan="3">
-                                                <?= $dokumen['Jenis_permohonan'] ?>
+                                        <tr>
+                                            <td colspan="3" style="background-color: #e3f2fd;font-weight: 600;color: #1565c0;font-size: 1.05em;padding: 1rem 1.25rem;border-bottom: 2px solid rgba(21, 101, 192, 0.2);">
+                                                <?= ucwords($dokumen['Jenis_permohonan']) ?>
                                             </td>
                                         </tr>
                                         <?php $previous_permohonan = $dokumen['Jenis_permohonan']; endif; ?>
@@ -91,6 +97,6 @@
                     <?php } ?>
                 </div>
                 <?php endif; ?>
-            </div>
         </div>
     </div>
+</section>

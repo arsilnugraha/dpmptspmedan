@@ -12,6 +12,8 @@ class Izin extends CI_Controller {
     public function index() {
         $data['menu_aktif'] = 'syarat_izin';
         $data['content'] = 'landingpage/izin/syarat_izin_view';
+        $data['plugin'] = 'bootstrap5';
+        
         
         $token = $this->session->userdata('api_token');
         if (empty($token)) {

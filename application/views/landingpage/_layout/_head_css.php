@@ -21,9 +21,6 @@
         <?php if(isset($menu_aktif) && $menu_aktif == 'tracking_izin') { ?>
                 <link rel="stylesheet" href="<?php echo base_url('assets/landingpage/css/tracking.css') ?>" type="text/css">
         <?php } ?>
-        <?php if(isset($menu_aktif) && $menu_aktif == 'syarat_izin') { ?>
-                <link rel="stylesheet" href="<?php echo base_url('assets/landingpage/css/syarat-izin.css') ?>" type="text/css">
-        <?php } ?>
         <?php if(isset($menu_aktif) && $menu_aktif == 'visitormpp') { ?>
                 <link rel="stylesheet" href="<?php echo base_url('assets/landingpage/css/visitor-mpp.css') ?>" type="text/css">
         <?php } ?>
